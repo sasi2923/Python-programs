@@ -187,6 +187,64 @@ for key, value in grades.items():
 
     
 
+#Computations using NumPy functions
+#NumPy program to convert a list of numeric values into an one-dimensional NumPy array.
+import numpy as np
+l = list(map(float, input("Type number with space: ").split()))
+print("Original List:",l)
+a = np.array(l)
+print("One-dimensional NumPy array: ",a)
+
+
+
+#NumPy program to convert a list and tuple into arrays.
+import numpy as np
+lst = list(map(float, input("Type number with space (list): ").split()))
+print("Original List: ",lst)
+print("List to array conversion: ")
+print(np.asarray(lst))
+tup= tuple(map(float, input("Type number with space (Tuple): ").split()))
+print("Original Tuple: ",tup)
+print("Tuple to array: ")
+print(np.asarray(tup))
+
+
+
+#Data manipulations using Pandas
+#Python program to convert a NumPy array and Series to DataFrames.
+arr = np.random.rand(3) #to create an one dimensional array 
+print("Numpy array:")
+print(arr)
+#conversion of array to dataframe
+d = pd.DataFrame(series,columns =['A'])
+print("\nArray to DataFrame: ")
+#conversion of array to series
+series = pd.Series(arr)
+print("Series : ")
+display(series)
+# conversion of series to dataframe
+df = pd.DataFrame(series,columns =['A'])
+print("\nSeries to DataFrame: ")
+df
+
+
+
+#Python program to add,subtract,multiply and divide two Panda Series.
+# conversion of series to dataframe
+df = pd.DataFrame(series,columns =['A'])
+print("\nSeries to DataFrame: ")
+df
+print("Addition of two Series:")
+print(ds)
+print("Subtraction of two Series:")
+ds = ds1 - ds2
+print(ds)
+print("Multiplication of two Series:")
+ds = ds1 * ds2
+print(ds)
+print("Division of Series1 by Series2:")
+ds = ds1 / ds2
+print(ds)
 
 
 
